@@ -17,7 +17,7 @@ import { BackEndInstructionComponent } from './back-end-instruction/back-end-ins
     FooBarQuixFormComponent,
     FooBarQuixComponent,
     HomeComponent,
-    NavBarComponent, 
+    NavBarComponent,
     FrontEndInstructionComponent,
     BackEndInstructionComponent
   ],
@@ -26,6 +26,8 @@ import { BackEndInstructionComponent } from './back-end-instruction/back-end-ins
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent }
+      ,
+            { path: 'foo-bar-quix', component: FooBarQuixComponent }
     ])
   ],
   providers: [

@@ -1,3 +1,19 @@
-<div class="container"> 
-    To Be Completed
+<div class="container">
+  <div class="col-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of convertedValues  | keyvalue">
+        {{item.key}} and the result is  {{item.value}}
+      </li>
+    </ul>
+  </div>
+
+  <form [formGroup]="convertForm" (ngSubmit)="submitNumber()">
+    <div class="form-group">
+      <label class="center-block">Number To Convert:
+        <input class="form-control" type="number" placeholder="numberToConvert" formControlName="numberToConvert">
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+  </form>
+
 </div>
