@@ -11,6 +11,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FrontEndInstructionComponent } from './front-end-instruction/front-end-instruction.component';
 import { BackEndInstructionComponent } from './back-end-instruction/back-end-instruction.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { BackEndInstructionComponent } from './back-end-instruction/back-end-ins
     NavBarComponent,
     FrontEndInstructionComponent,
     BackEndInstructionComponent
+
   ],
   imports: [
     BrowserModule, ReactiveFormsModule, HttpClientModule,

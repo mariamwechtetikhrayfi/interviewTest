@@ -8,8 +8,7 @@ import{Result} from '../model/Result';
 export class FooBarQuixFormComponent implements OnInit {
 convertForm ;
 @Output() submitNumberOutput:EventEmitter<Result> =new EventEmitter<Result>();
-@Input()
-  convertedValues = new Map<number, string>();
+@Input()  convertedValues = new Map<number, string>();
   constructor(private formBuilder: FormBuilder) {
    this.convertForm = this.formBuilder.group({
         numberToConvert: []
@@ -22,9 +21,6 @@ convertForm ;
 
   submitNumber(): void {
   this.submitNumberOutput.emit(this.convertForm.value.numberToConvert)
- // this.submitNumberOutput=this.convertForm.value
-  console.log(this.convertForm.value.numberToConvert)
-  console.log(this.convertedValues.size)
   }
 
 }
